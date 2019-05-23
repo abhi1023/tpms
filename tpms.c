@@ -17,9 +17,10 @@ int main(void)
     CLR_BIT(DDRC, PC3);
     SET_BIT(DDRB, 5);
     initADC();
-    uint16_t a, b, c, d;
+   
     while(1)
     {
+         uint16_t a, b, c, d;
         a = readADC(0);
         _delay_ms(200);
         b = readADC(1);
